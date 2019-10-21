@@ -38,7 +38,6 @@ body {
   font-size: 62.5%;
   line-height: 1.7;
   font-weight: 400;
-  overflow: hidden;
 }
 .container {
   max-width: 100%;
@@ -158,6 +157,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  background: white;
 }
 .container .view .homepage_container .about-us-container .row {
   display: flex;
@@ -165,18 +165,27 @@ body {
   width: 100%;
   border: 1px solid black;
 }
+.container .view .homepage_container .about-us-container .row h1 {
+  font-size: 2rem;
+}
 .container .view .homepage_container .about-us-container .row_content {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin-top: 3rem;
   width: 100%;
-  border: 1px solid black;
 }
 .container .view .homepage_container .about-us-container .row_content .col-box {
-  text-align: center;
-  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 .container .view .homepage_container .about-us-container .row_content img {
   height: 15rem;
   width: 15rem;
+}
+.container .view .homepage_container .about-us-container .row_content a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: black;
 }
