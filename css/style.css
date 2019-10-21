@@ -152,3 +152,9 @@ body {
   width: 2rem;
   border-radius: 40px;
 }
+.container .view .homepage_container .about-us-container .row .col {
+  border: 1px solid black;
+}
+.container .view .homepage_container .about-us-container .row .col-1-of-1 {
+  width: calc(100% - 2rem);
+}
