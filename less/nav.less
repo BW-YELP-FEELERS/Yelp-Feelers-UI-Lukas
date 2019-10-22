@@ -4,25 +4,26 @@
     justify-content: space-between;
     align-items: center;
     height: 6rem;
-    margin-left: 3rem;
-    margin-right: 3rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
 
     .logo {
 
         h1 {
             color: @primary-red;
             font-weight: 900;
-            font-size: 3rem;
+            font-size: 4rem;
             text-transform: uppercase;
             letter-spacing: 5px;
-
+            .animated-to-bg()
         }
 
         span {
             color: @matte-black;
-            font-size: calc(3rem / 2);
+            font-size: calc(4rem / 2);
             text-transform: uppercase;
             letter-spacing: 1px;
+            .animated-to-bg()
         }
 
     }
@@ -97,15 +98,17 @@
                 justify-content: center;
                 align-items: center;
                 height: inherit;
-                font-size: 1.1rem;
+                font-size: 2rem;
                 list-style: none;
+                
 
                 a { // links
-                    color: black;
+                    .animated-to-bg();
                     text-decoration: none;
                     text-transform: uppercase;
                     padding: 1.5rem 3rem;
                     margin-bottom: 3px;
+                    
 
                     &:hover {
                         font-weight: 900;

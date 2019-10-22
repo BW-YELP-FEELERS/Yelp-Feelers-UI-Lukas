@@ -1,9 +1,39 @@
 // fonts
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900&display=swap');
 
+html {
+    position: relative;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 62.5%;
+    line-height: 1.7;
+    font-weight: 400;
+}
+
 body {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 62.5%;
     line-height: 1.7;
     font-weight: 400;
+
+    background: linear-gradient(90deg, @primary-red 0%, darken(@smoke, 50%) 100%) no-repeat center center fixed;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 300% 300%;
+    animation: pulse 10s ease infinite;
+  
+@keyframes pulse {
+    0% {
+        background-position: 0% 50%;
+      }
+      
+      50% {
+        background-position: 100% 50%;
+      }
+      
+      100% {
+        background-position: 0% 50%;
+      }
+}
+
 }
