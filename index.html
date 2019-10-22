@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/2433e0d4d1.js" crossorigin="anonymous"></script>
-    <script src="js/imager.js"></script>
 </head>
 
 <body>
@@ -17,45 +16,61 @@
             <div class="logo">
                 <h1>Yelp<span>Feelers</span></h1>
             </div>
-            <div class="searchbox_container">
-                <div class="header_searchbox">
-                    <a class="search-btn" href="#"><i class="fas fa-search"></i></a>
-                    <input class="search_text" type="text" name="" placeholder="Find">
-                </div>
-            </div>
-        </header>
-        <div class="content">
-            <nav class="sidebar">
-                <ul class="sidenav">
-                    <li class="sidenav_item">
+            <nav class="navbar">
+                <ul class="navul">
+                    <li class="nav_item">
+                        <a href="#">
+                            <span>The Team</span>
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="about-us.html">
+                            <span>Mission</span>
+                        </a>
+                    </li>
+                    <li class="nav_item">
                         <a href="#">
                             <span>Login</span>
                         </a>
                     </li>
-                    <li class="sidenav_item">
-                        <a href="#">
-                            <span>Create an Account</span>
-                        </a>
-                    </li>
-                    <li class="sidenav_item">
-                        <a href="about-us.html">
-                            <span>About Us</span>
-                        </a>
-                    </li>
                 </ul>
-                <div class="copyright">
-                    &copy; 2019 by Lambda Student(s) All rights reserved.
-                </div>
             </nav>
-
-            <main class="view">
-                <div class="homepage_container">
-                    <div class="homepage_hero">
-                        <img class="homepage_hero_image" src="img/heroimg1.jpg" alt="">
-                    </div>
+            <!-- <div class="searchbox_container">
+                <div class="header_searchbox">
+                    <a class="search-btn" href="#"><i class="fas fa-search"></i></a>
+                    <input class="search_text" type="text" name="" placeholder="Find">
                 </div>
-            </main>
-        </div>
+            </div> -->
+        </header>
+
+        <main class="main_view"> <!--Where the image will go, will opacity fade out -->
+            <div class="main_view_image">
+               <!--  <img id="heroimg" class="hero_image" src="img/heroimg1.jpg" alt="A woman eating food"> -->
+            </div>
+            <div class="home_container"> <!-- Just the container-->
+                <div class="content"> <!-- where the content will appear-->
+                    <h1>Testing</h1>
+                    <div class="row">
+                        <div class="col">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mollis luctus ante
+                                porttitor hendrerit. Phasellus vestibulum tincidunt ultricies. Sed neque magna, pulvinar
+                                eu aliquet at, aliquam quis mauris. Phasellus feugiat ultricies libero, a viverra dolor
+                                ornare nec. Nunc dictum ex id leo ullamcorper, varius pretium est ornare. Proin
+                                sollicitudin ultrices ante non blandit. Nam auctor, tellus non semper rutrum, lectus
+                                velit auctor mi, sit amet volutpat purus metus id nulla. Nulla sit amet mi at felis
+                                fringilla finibus ac eget sem. Cras bibendum sem in nisl dictum, nec semper eros
+                                ultricies.
+
+                            </p>
+                        </div>
+                    </div>
+                    <button>Create an Account!</button>
+                </div>
+            </div>
+        </main>
+
+
     </div>
 </body>
+
 </html>

@@ -39,88 +39,33 @@ body {
   line-height: 1.7;
   font-weight: 400;
 }
-.container {
-  max-width: 100%;
-  background: #f2f2f0;
-}
-.container .content {
-  display: flex;
-  height: 90vh;
-}
-.container .content .sidebar {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex: 0 0 17%;
-  background-color: #f2f2f0;
-}
-.container .content .sidebar .sidenav {
-  text-align: center;
-  font-size: 1.2rem;
-  list-style: none;
-  margin-top: 3.5rem;
-}
-.container .content .sidebar .sidenav .sidenav_item a {
-  color: black;
-  text-decoration: none;
-  text-transform: uppercase;
-  display: block;
-  padding: 1.5rem 3rem;
-}
-.container .content .sidebar .sidenav .sidenav_item a:hover {
-  font-weight: 900;
-  background: rgba(217, 89, 100, 0.3);
-  border-left: 5px solid #d95964;
-}
-.container .content .sidebar .copyright {
-  font-size: 0.65rem;
-  text-align: center;
-  padding: 2.5rem;
-}
-.container .content .view {
-  flex: 1;
-}
-.container .content .view .homepage_container {
-  flex: 1;
-  border-top-left-radius: 25px;
-}
-.container .content .view .homepage_container .homepage_hero .homepage_hero_image {
-  -webkit-box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.75);
-  border-top-left-radius: 25px;
-}
-.container {
-  max-width: 100%;
-  background: #f2f2f0;
-}
-.container .header {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 7rem;
+  height: 6rem;
   margin-left: 3rem;
   margin-right: 3rem;
 }
-.container .header .logo h1 {
+.header .logo h1 {
   color: #d95964;
   font-weight: 900;
   font-size: 3rem;
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: 5px;
 }
-.container .header .logo span {
+.header .logo span {
   color: #252223;
   font-size: calc(3rem / 2);
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-.container .searchbox_container {
+.header .searchbox_container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.container .searchbox_container .header_searchbox {
+.header .searchbox_container .header_searchbox {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -130,14 +75,14 @@ body {
   padding: 10px;
   color: #252223;
 }
-.container .searchbox_container .header_searchbox ::placeholder {
+.header .searchbox_container .header_searchbox ::placeholder {
   color: #252223;
 }
-.container .searchbox_container .header_searchbox:hover > .search_text {
+.header .searchbox_container .header_searchbox:hover > .search_text {
   width: 240px;
   padding: 0 6px;
 }
-.container .searchbox_container .header_searchbox .search_text {
+.header .searchbox_container .header_searchbox .search_text {
   border: none;
   background: none;
   outline: none;
@@ -148,7 +93,7 @@ body {
   line-height: 40px;
   width: 0px;
 }
-.container .searchbox_container .header_searchbox .search-btn {
+.header .searchbox_container .header_searchbox .search-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -159,44 +104,105 @@ body {
   width: 2rem;
   border-radius: 40px;
 }
-.container .view .homepage_container {
-  border: 1px solid #252223;
+.header .navbar {
+  display: flex;
   height: 100%;
 }
-.container .view .homepage_container .about-us-container {
+.header .navbar .navul {
   display: flex;
-  flex-wrap: wrap;
+}
+.header .navbar .navul .nav_item {
+  display: flex;
   justify-content: center;
   align-items: center;
+  height: inherit;
+  font-size: 1.1rem;
+  list-style: none;
 }
-.container .view .homepage_container .about-us-container .row {
+.header .navbar .navul .nav_item a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1.5rem 3rem;
+  margin-bottom: 3px;
+}
+.header .navbar .navul .nav_item a:hover {
+  font-weight: 900;
+  background: rgba(217, 89, 100, 0.3);
+}
+.container {
+  max-width: 100%;
+  max-height: 100%;
+}
+.container .main_view {
+  position: relative;
   display: flex;
   justify-content: center;
-  width: 100%;
+  align-items: center;
+  width: 80%;
+  height: 50rem;
+  margin: 3rem auto auto auto;
+  /*  .main_view_image {
+            position: absolute;
+            min-width: 100%;
+            min-height: 100%;
+
+            -webkit-animation: imgFadeOut 3s;
+            -webkit-animation-fill-mode: forwards;
+            -webkit-animation-delay: 1.6s;
+
+            @keyframes imgFadeOut {
+                0% {
+                    opacity: 1;
+                }
+
+                100% {
+                    opacity: 0;
+                    z-index: -99;
+                }
+            }
+
+            .hero_image {}
+        } */
 }
-.container .view .homepage_container .about-us-container .row h1 {
-  font-size: 2rem;
-}
-.container .view .homepage_container .about-us-container .row_content {
+.container .main_view .home_container {
   display: flex;
-  justify-content: space-evenly;
-  margin-top: 2rem;
-  width: 100%;
+  visibility: visible;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
+  /*   -webkit-animation: contentFadeIn 3s;
+            -webkit-animation-fill-mode: forwards;
+            -webkit-animation-delay: 1.8s;
+
+            @keyframes contentFadeIn {
+                0% {
+                  opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+
+            */
 }
-.container .view .homepage_container .about-us-container .row_content .col-box {
+.container .main_view .home_container .content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 1rem;
-  text-align: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
 }
-.container .view .homepage_container .about-us-container .row_content .col-box .col-content a {
-  font-size: 1rem;
-  text-decoration: none;
-  color: black;
-}
-.container .view .homepage_container .about-us-container .row_content img {
-  height: 14rem;
-  width: 14rem;
-  border-radius: 100%;
+.container .main_view .home_container .content .row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  background: white;
 }
