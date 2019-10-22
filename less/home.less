@@ -9,7 +9,7 @@
         justify-content: center;
         align-items: center;
         width: 100%;
-        height: 50rem;
+        height: 60rem;
         margin: 10rem auto;
        
      
@@ -67,7 +67,7 @@
                             flex-direction: column;
                             justify-content: flex-start;
                             align-items: flex-start;
-                            margin-bottom: 6rem;
+                            margin-bottom: 10rem;
                             width: 100%;
                             height: 100%;
 
@@ -75,18 +75,70 @@
                                 font-size: 3rem;
                                 font-weight: 900;
                                 letter-spacing: 1px;
+                                margin-bottom: 2rem;
                             }
 
                             h3 {
                                 font-size: 2rem;
                                 font-weight: 600;
+                                padding-bottom: 10px;
+                                border-bottom: 1px solid @matte-blue;
 
                                 span {
                                     font-weight: 900;
                                     margin: 1rem;
-
+                             
                                 }
                             }
+
+                            .header-star-container {
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: flex-end;
+                                width: 90%;
+                                
+                                
+
+                                .header-stars {
+                                    display: flex;
+                                    flex-direction: row;
+                                    justify-content: center;
+                                    align-items: center;
+                                    width: 12rem;  
+                                    height: 3rem;
+                                    margin-right: 7.5rem;
+                                    background: @matte-black;
+                                    border-radius: 25px;
+                                    .star-svg {
+                                        margin-left: 0 auto;
+                                        width: 1.8rem;
+                                        height: 1.8rem;
+                                    }
+    
+                                    .star-1 {
+                                        fill: @yelp-yellow-light;
+                                    }
+    
+                                    .star-2 {
+                                        fill: @yelp-yellow-regular;
+                                    }
+    
+                                    .star-3 {
+                                        fill: @yelp-orange-regular;
+                                    }
+    
+                                    .star-4 {
+                                        fill: @yelp-red-regular;
+                                    }
+    
+                                    .star-5 {
+                                        fill: @yelp-red-dark;
+                                    }
+    
+                                }
+                            }
+              
+                    
                         }
             
 
@@ -97,7 +149,7 @@
                             align-items: flex-start;
                             font-size: 2rem;
                             line-height: 4rem;
-                            margin-bottom: 5rem;
+                            margin-bottom: 3rem;
                             font-weight: 700;
                         }
 
