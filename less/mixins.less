@@ -24,3 +24,25 @@
 
 
 
+
+.animated-to-svg() { // the pulse for svg
+    animation: svg_background 9s ease infinite;
+
+    @keyframes svg_background {
+        0% {
+            fill: black;
+          }
+          25% {
+            fill: black;
+          }
+          50% {
+            fill: white;
+          }
+          75% {
+            fill: black;
+          }
+          100% {
+            fill: black;
+          }
+    }
+}
