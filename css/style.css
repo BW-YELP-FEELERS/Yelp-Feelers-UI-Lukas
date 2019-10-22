@@ -41,11 +41,13 @@ html {
   font-weight: 400;
 }
 body {
+  position: relative;
+  z-index: -1;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 62.5%;
   line-height: 1.7;
   font-weight: 400;
-  background: linear-gradient(90deg, #d95964 0%, #7a7a69 100%) no-repeat center center fixed;
+  background: linear-gradient(20deg, #f2f2f0 0%, #d0303d 100%) no-repeat center center fixed;
   -webkit-background-size: 100% 100%;
   -moz-background-size: 100% 100%;
   -o-background-size: 100% 100%;
@@ -67,7 +69,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 6rem;
+  height: 7rem;
   margin-left: 5rem;
   margin-right: 5rem;
 }
@@ -77,14 +79,20 @@ body {
   font-size: 4rem;
   text-transform: uppercase;
   letter-spacing: 5px;
-  animation: test 9s ease infinite;
+  animation: pulse_background 9s ease infinite;
 }
-@keyframes test {
+@keyframes pulse_background {
   0% {
+    color: black;
+  }
+  25% {
     color: black;
   }
   50% {
     color: white;
+  }
+  75% {
+    color: black;
   }
   100% {
     color: black;
@@ -95,14 +103,20 @@ body {
   font-size: calc(4rem / 2);
   text-transform: uppercase;
   letter-spacing: 1px;
-  animation: test 9s ease infinite;
+  animation: pulse_background 9s ease infinite;
 }
-@keyframes test {
+@keyframes pulse_background {
   0% {
+    color: black;
+  }
+  25% {
     color: black;
   }
   50% {
     color: white;
+  }
+  75% {
+    color: black;
   }
   100% {
     color: black;
@@ -168,18 +182,24 @@ body {
   list-style: none;
 }
 .header .navbar .navul .nav_item a {
-  animation: test 9s ease infinite;
+  animation: pulse_background 9s ease infinite;
   text-decoration: none;
   text-transform: uppercase;
   padding: 1.5rem 3rem;
   margin-bottom: 3px;
 }
-@keyframes test {
+@keyframes pulse_background {
   0% {
+    color: black;
+  }
+  25% {
     color: black;
   }
   50% {
     color: white;
+  }
+  75% {
+    color: black;
   }
   100% {
     color: black;
@@ -187,56 +207,30 @@ body {
 }
 .header .navbar .navul .nav_item a:hover {
   font-weight: 900;
-  background: rgba(217, 89, 100, 0.3);
+  border-bottom: 1px solid white;
 }
 .container {
   max-width: 100%;
   max-height: 100%;
 }
 .container .main_view {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 50rem;
-  margin: 3rem auto auto auto;
-  /*  .main_view_image {
-            position: absolute;
-            min-width: 100%;
-            min-height: 100%;
-
-            -webkit-animation: imgFadeOut 3s;
-            -webkit-animation-fill-mode: forwards;
-            -webkit-animation-delay: 1.6s;
-
-            @keyframes imgFadeOut {
-                0% {
-                    opacity: 1;
-                }
-
-                100% {
-                    opacity: 0;
-                    z-index: -99;
-                }
-            }
-
-        } */
-}
-.container .main_view .main_view_bg {
-  position: absolute;
-  width: 100%;
-  height: 100%;
+  margin: 10rem auto;
 }
 .container .main_view .home_container {
   display: flex;
-  visibility: hidden;
+  visibility: visible;
   justify-content: center;
   align-items: center;
   width: 80%;
-  height: 80%;
+  height: 100%;
   margin: 0 auto;
-  /*   -webkit-animation: contentFadeIn 3s;
+  /*
+          -webkit-animation: contentFadeIn 3s;
             -webkit-animation-fill-mode: forwards;
             -webkit-animation-delay: 1.8s;
 
@@ -250,22 +244,37 @@ body {
                     visibility: visible;
                 }
             }
-
-            */
+*/
 }
 .container .main_view .home_container .content {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
   width: 100%;
   height: 100%;
   border: 1px solid black;
 }
 .container .main_view .home_container .content .row {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  flex-wrap: wrap;
   width: 100%;
   height: 100%;
   background: white;
+}
+.container .main_view .home_container .content .row .col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  padding: 1rem;
+  height: 100%;
+}
+.container .main_view .home_container .content .row .col-one h1 {
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  font-size: 3rem;
+}
+.container .main_view .home_container .content .row .col-one ul {
+  font-size: 2rem;
 }

@@ -1,20 +1,26 @@
 
 
 .animated-to-bg() { // the pulse
-    animation: test 9s ease infinite;
+    animation: pulse_background 9s ease infinite;
 
-    @keyframes test {
+    @keyframes pulse_background {
         0% {
             color: black;
           }
-          
+          25% {
+            color: black;
+          }
           50% {
             color: white;
           }
-          
+          75% {
+            color: black;
+          }
           100% {
             color: black;
           }
     }
 }
+
+
 
