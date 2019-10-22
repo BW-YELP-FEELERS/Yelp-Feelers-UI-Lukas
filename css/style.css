@@ -281,7 +281,16 @@ body {
   height: 100%;
 }
 .container .main_view .home_container .content .row .col-one .header .header_icon_row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 100%;
   border: 1px solid black;
+}
+.container .main_view .home_container .content .row .col-one .header .header_icon_row .text-col {
+  align-self: start;
 }
 .container .main_view .home_container .content .row .col-one .header .header_icon_row .header_icon_col {
   border: 1px solid black;
