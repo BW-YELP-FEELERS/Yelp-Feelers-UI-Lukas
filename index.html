@@ -55,30 +55,26 @@
                 <!-- Just the container-->
                 <div class="content">
                     <!-- where the content will appear-->
-                    <div class="row content-row">
-                        <div class="col col-one">
-                            <div class="header">
-                                <h1>Meet the Yelp Feelers App</h1>
-                                <div class="header_icon_row icon-col">
-                                    <div class="header_icon_col">
-                                        <div class="header-star-container">
-                                            <div class="header-stars">
-                                                    <svg viewBox="0 0 32 32" class="ai-svg ai">
-                                                            <use xlink:href="file-ai.svg"></use>
-                                                            <path d="M8.007 10c-1.661 0-3.007 1.342-3.007 2.999v7.002c0 1.656 1.336 2.999 3.007 2.999h16.986c1.661 0 3.007-1.342 3.007-2.999v-7.002c0-1.656-1.336-2.999-3.007-2.999h-16.986zM19 14h-1v-1h3v1h-1v5h1v1h-3v-1h1v-5zM15 17h-3v3h-1v-5c0-1.112 0.898-2 2.005-2h0.99c1.111 0 2.005 0.895 2.005 2v5h-1v-3zM12.999 14c-0.552 0-0.999 0.444-0.999 1v1h3v-1c0-0.552-0.443-1-0.999-1h-1.002z"></path>
-                                                        </svg>
-                                                        <svg viewBox="0 0 32 32" class="neutral-svg faces">
-                                                                <use xlink:href="neutral-face.svg"></use>
-                                                                <path d="M16.5 29v0c-6.904 0-12.5-5.596-12.5-12.5s5.596-12.5 12.5-12.5c6.904 0 12.5 5.596 12.5 12.5s-5.596 12.5-12.5 12.5zM16.5 28c6.351 0 11.5-5.149 11.5-11.5s-5.149-11.5-11.5-11.5c-6.351 0-11.5 5.149-11.5 11.5s5.149 11.5 11.5 11.5v0zM12 14c0.552 0 1-0.448 1-1s-0.448-1-1-1c-0.552 0-1 0.448-1 1s0.448 1 1 1v0zM21 14c0.552 0 1-0.448 1-1s-0.448-1-1-1c-0.552 0-1 0.448-1 1s0.448 1 1 1v0zM12 21v1h9v-1h-9z"></path>
-                                                            </svg>
-                                                            <svg viewBox="0 0 32 32" class="happy-svg faces">
-                                                                    <use xlink:href="laughing-face.svg"></use>
-                                                                    <path d="M16.5 29v0c-6.904 0-12.5-5.596-12.5-12.5s5.596-12.5 12.5-12.5c6.904 0 12.5 5.596 12.5 12.5s-5.596 12.5-12.5 12.5zM16.5 28c6.351 0 11.5-5.149 11.5-11.5s-5.149-11.5-11.5-11.5c-6.351 0-11.5 5.149-11.5 11.5s5.149 11.5 11.5 11.5v0zM18.672 13.793l2.828-2.828 2.828 2.828-0.707 0.707-2.121-2.121-2.121 2.121-0.707-0.707zM8.672 13.793l2.828-2.828 2.828 2.828-0.707 0.707-2.121-2.121-2.121 2.121-0.707-0.707zM9 19h15c0 0-1 6-7.5 6s-7.5-6-7.5-6zM10.345 20c0 0 1.287 4.013 6.18 4.013s6.118-4.013 6.118-4.013h-12.298z"></path>
-                                                                </svg>
-                                                                <svg viewBox="0 0 32 32" class="sad-svg faces">
-                                                                        <use xlink:href="worried-face.svg"></use>
-                                                                        <path d="M16.5 29v0c-6.904 0-12.5-5.596-12.5-12.5s5.596-12.5 12.5-12.5c6.904 0 12.5 5.596 12.5 12.5s-5.596 12.5-12.5 12.5zM16.5 28c6.351 0 11.5-5.149 11.5-11.5s-5.149-11.5-11.5-11.5c-6.351 0-11.5 5.149-11.5 11.5s5.149 11.5 11.5 11.5v0zM16.497 22c-2.997 0-4.497 1-4.497 1s1-3 4.5-3c3.5 0 4.5 3 4.5 3s-1.506-1-4.503-1v0zM12 15c0.552 0 1-0.448 1-1s-0.448-1-1-1c-0.552 0-1 0.448-1 1s0.448 1 1 1v0zM21 15c0.552 0 1-0.448 1-1s-0.448-1-1-1c-0.552 0-1 0.448-1 1s0.448 1 1 1v0zM19 10v1h4v-1h-4zM10 10v1h4v-1h-4z"></path>
-                                                                    </svg>
+                    <div class="row-left row-default">
+                        <div class="row-left-col">
+                            <div class="header-home">
+                                <div class="meet-container">
+                                    <h1>Meet the Yelp Feelers App</h1>
+                                    <h3>Sentiment based app using <span>machine learning</span> to depict <span>accurate
+                                            user reviews</span>.</h3>
+                                </div>
+                            </div>
+                            <img class="mobile-svg" src="img/mobile.svg" alt="Picture of a mobile phone">
+                        </div>
+                    </div>
+
+                    <div class="row-right svg-row row-default">
+                        <div class="col col-two">
+                            <ul>
+                                <li>
+                                    <div class="star-col">
+                                        <div class="star-col-pos">
+                                            <div class="star-style">
                                                 <svg viewBox="0 0 20 20" class="star-svg star-1">
                                                     <use xlink:href="star.svg"></use>
                                                     <path
@@ -112,33 +108,24 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="header_icon_col text-col">
-                                            <h3>Machine Learning <span>+</span> Sentiment Analysis <span>=</span> Accurate Reviews</h3>
-                                    </div>
-                                </div>        
-                            </div>
-                            <ul>
+                                </li>
                                 <li>
                                     Toggle between original reviews and accurately modified.
                                 </li>
                                 <li>
+
+                                </li>
+                                <li>
                                     Business recommendation system based on accurate reviews.
+                                </li>
+                                <li>
+                                    
                                 </li>
                                 <li>
                                     An entire platform rid of geniune consumer mistakes for a fair and corrected system.
                                 </li>
                             </ul>
                             <button class="cta-button">Sign Up!</button>
-                        </div>
-                    </div>
-                    <div class="row svg-row">
-                        <div class="col col-two">
-                            <!--https://undraw.co/search -->
-                            <div class="col-two_image_container">
-                                <img class="burger-before" src="img/burger-before.svg"
-                                    alt="Picture of a burger-before.">
-                                <img class="burger-after" src="img/burger-after.svg" alt="Picture of a burger-after.">
-                            </div>
                         </div>
                     </div>
                 </div>
