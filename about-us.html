@@ -3,128 +3,79 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Yelp Feelers</title>
+    <title>Yelp Feelers | The Team</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://kit.fontawesome.com/2433e0d4d1.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="container">
         <header class="header">
             <div class="logo">
-                <h1>Yelp<span>Feelers</span></h1>
+                <h1 id="test">Yelp<span>Feelers</span></h1>
             </div>
-            <div class="searchbox_container">
-                <div class="header_searchbox">
-                    <a class="search-btn" href="#"><i class="fas fa-search"></i></a>
-                    <input class="search_text" type="text" name="" placeholder="Find">
-                </div>
-            </div>
-        </header>
-        <div class="content">
-            <nav class="sidebar">
-                <ul class="sidenav">
-                    <li class="sidenav_item">
+            <nav class="navbar">
+                <ul class="navul">
+                    <li class="nav_item">
                         <a href="index.html">
                             <span>Home</span>
                         </a>
                     </li>
+                    <li class="nav_item">
+                        <a href="#">
+                            <span>Mission</span>
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#">
+                            <svg viewBox="0 0 20 20" class="login-svg">
+                                <use xlink:href="login.svg"></use>
+                                <path
+                                    d="M14 10l-6-5v3h-7v4h7v3l6-5zM17 17h-8v2h8c1.1 0 2-0.9 2-2v-14c0-1.1-0.9-2-2-2h-8v2h8v14z">
+                                </path>
+                            </svg>
+                            <span class="login-btn">Login</span>
+                        </a>
+                    </li>
                 </ul>
-                <div class="copyright">
-                    &copy; 2019 by Lambda Student(s) All rights reserved.
-                </div>
             </nav>
+            <!-- <div class="searchbox_container">
+                <div class="header_searchbox">
+                    <a class="search-btn" href="#"><i class="fas fa-search"></i></a>
+                    <input class="search_text" type="text" name="" placeholder="Find">
+                </div>
+            </div> -->
+        </header>
 
-            <main class="view">
-                <div class="homepage_container">
-                    <div class="about-us-container">
-                        <div class="row">
-                            <h1>Meet the Team</h1>
+        <div class="about-wrapper">
+            <div class="about-row">
+                <div class="about-col">
+                    <div class="col-box">
+                        <h1>Steve Rollins</h1>
+                        <div class="col-image">
+                            <img src="https://avatars2.githubusercontent.com/u/22282953?s=400&v=4"
+                                alt="Picture of Steve Rollins">
                         </div>
-                        <div class="row_content ">
-                            <div class="col-box">
-                                <h1>Steve Rollins</h1>
-                                <img src="https://avatars2.githubusercontent.com/u/22282953?s=400&v=4"
-                                    alt="Picture of Steve Rollins">
-                                <div class="col-content">
-                                    <h3>Backend Developer</h3>
-                                    <a href="https://github.com/greenhornsr">Github</a>
-                                </div>
-                            </div>
-                            <div class="col-box">
-                                <h1>Josh Fowlkes</h1>
-                                <img src="https://avatars2.githubusercontent.com/u/52584954?s=400&v=4"
-                                    alt="Picture of Josh Fowlkes">
-                                <div class="col-content">
-                                    <h3>Machine Learning Engineer</h3>
-                                    <a href="https://github.com/JoshFowlkes">Github</a>
-                                </div>
-                            </div>
-                            <div class="col-box">
-                                <h1>Maxime Vacher-Materno</h1>
-                                <img src="https://ca.slack-edge.com/T4JUEB3ME-ULQJ53FB3-041f3c145b26-512"
-                                    alt="Picture of Maxime Vacher-Materno">
-                                <div class="col-content">
-                                    <h3>Data Engineer</h3>
-                                    <a href="https://github.com/maximematerno">Github</a>
-                                </div>
-                            </div>
-                            <div class="col-box">
-                                <h1>Oscar Calzada</h1>
-                                <img src="https://avatars0.githubusercontent.com/u/53792042?s=400&v=4"
-                                    alt="Picture of Oscar Calzada">
-                                <div class="col-content">
-                                    <h3>Data Engineer</h3>
-                                    <a href="https://github.com/maximematerno">Github</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row_content ">
-                            <div class="col-box">
-                                <h1>Russell Terry</h1>
-                                <img src="https://ca.slack-edge.com/T4JUEB3ME-ULZNHN5LM-c2054e1958f7-512"
-                                    alt="Picture of Russell Terry">
-                                <div class="col-content">
-                                    <h3>Web React II</h3>
-                                    <a href="https://github.com/Surfsol">Github</a>
-                                </div>
-                            </div>
-                            <div class="col-box">
-                                <h1>Kevin Manning</h1>
-                                <img src="https://avatars1.githubusercontent.com/u/47128901?s=400&v=4"
-                                    alt="Picture of Kevin Manning">
-                                <div class="col-content">
-                                    <h3>Web React I</h3>
-                                    <a href="https://github.com/ClickClackity">Github</a>
-                                </div>
-                            </div>
-                            <div class="col-box">
-                                <h1>Lukas Jaronis</h1>
-                                <img src="https://avatars1.githubusercontent.com/u/20616994?s=460&v=4"
-                                    alt="Picture of Lukas Jaronis">
-                                <div class="col-content">
-                                    <h3>Web UI Developer</h3>
-                                    <a href="https://github.com/lukasjaronis">Github</a>
-                                </div>
-                            </div>
-                            <div class="col-box">
-                                <h1>Henry Souder-Arguedas</h1>
-                                <img src="https://ca.slack-edge.com/T4JUEB3ME-UFMD9CZGB-8fe42cb2cfbc-512"
-                                    alt="Picture of Henry Souder-Arguedas">
-                                <div class="col-content">
-                                    <h3>Web UI Developer</h3>
-                                    <a href="https://github.com/henryarguedas">Github</a>
-                                </div>
-                            </div>
+                        <div class="col-content">
+                            <h3>Backend Developer</h3>
+                            <a href="https://github.com/greenhornsr">Github</a>
                         </div>
                     </div>
+                    <div class="col-box">
+                            <h1>Steve Rollins</h1>
+                            <div class="col-image">
+                                <img src="https://avatars2.githubusercontent.com/u/22282953?s=400&v=4"
+                                    alt="Picture of Steve Rollins">
+                            </div>
+                            <div class="col-content">
+                                <h3>Backend Developer</h3>
+                                <a href="https://github.com/greenhornsr">Github</a>
+                            </div>
+                        </div>
                 </div>
+            </div>
         </div>
-        </main>
-    </div>
-    </div>
 </body>
 
 </html>
