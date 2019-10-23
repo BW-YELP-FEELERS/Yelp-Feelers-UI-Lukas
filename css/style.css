@@ -177,6 +177,8 @@ body {
   text-transform: uppercase;
   padding: 1.5rem 3rem;
   margin-bottom: 3px;
+  height: 20rem;
+  width: 17rem;
 }
 .header .navbar .navul .nav_item a:hover {
   font-weight: 900;
@@ -436,7 +438,6 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid #c0c0c0;
   margin: 1rem;
   padding: 1rem;
   width: 80%;
@@ -451,34 +452,116 @@ body {
 .about-wrapper .about-row .about-col .col-box {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   width: calc(33% - 2rem);
-  margin: 2rem;
+  margin: 1px;
   border: 1px solid #c0c0c0;
 }
-.about-wrapper .about-row .about-col .col-box img {
-  border-radius: 100%;
-  width: 25rem;
-  height: 25rem;
+.about-wrapper .about-row .about-col .col-box:hover {
+  -webkit-box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.75);
 }
-.about-wrapper .about-row .about-col .col-box span {
+.about-wrapper .about-row .about-col .col-box:hover #icon-visible {
+  visibility: visible;
+  -webkit-animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@-webkit-keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.about-wrapper .about-row .about-col .col-box img {
+  width: 20rem;
+  height: 20rem;
+}
+.about-wrapper .about-row .about-col .col-box .top-content-holder-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #c0c0c0;
+  width: 100%;
+  height: 20%;
+}
+.about-wrapper .about-row .about-col .col-box .top-content-holder-row .top-content-holder {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: calc(33% - 2rem);
+}
+.about-wrapper .about-row .about-col .col-box .top-content-holder-row .top-content-holder .about-icons {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  justify-content: center;
+  margin: 1rem;
+  height: 3rem;
+  width: 3rem;
+  overflow: hidden;
+  visibility: hidden;
+}
+.about-wrapper .about-row .about-col .col-box .top-content-holder-row .top-content-holder .about-icons:hover {
+  fill: #d95964;
+}
+.about-wrapper .about-row .about-col .col-box .top-content-holder-row .top-content-holder .user-content-holder {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  height: 100%;
+  flex-grow: 1;
 }
-.about-wrapper .about-row .about-col .col-box span:first-child {
+.about-wrapper .about-row .about-col .col-box .top-content-holder-row .top-content-holder .user-content-holder span:first-child {
   font-size: 2rem;
-  letter-spacing: 2px;
-  font-weight: 600;
+  letter-spacing: 1px;
 }
-.about-wrapper .about-row .about-col .col-box span:last-child {
-  font-size: 1.5rem;
-  letter-spacing: 2px;
-  font-weight: 600;
+.about-wrapper .about-row .about-col .col-box .top-content-holder-row .top-content-holder .user-content-holder span:last-child {
+  font-size: 1.2rem;
+}
+.about-wrapper .about-row .about-col .col-box .top-content-holder-row .content-grow {
+  flex-grow: 1;
+}
+.about-wrapper .about-row .about-col .col-box .user-content {
+  border: 1px solid black;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+.about-wrapper .about-row .about-col .col-box .user-content span {
+  display: flex;
+  flex-direction: column;
+  margin-right: 3rem;
+}
+.about-wrapper .about-row .about-col .col-box .user-content:first-child {
+  font-size: 1rem;
 }
 .about-wrapper .about-row .about-col .col-content {
   text-align: center;

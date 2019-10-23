@@ -1,119 +1,168 @@
+.animated-to-bg() {
+
+        animation-name: fade-in;
+
+        -webkit-animation: fade-in 5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        animation: fade-in 5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 
 
-.animated-to-bg() { 
-   
-    animation-name: fade-in;
+        @-webkit-keyframes fade-in {
+                0% {
+                        opacity: 0;
+                }
 
-    -webkit-animation: fade-in 5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-    animation: fade-in 5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-    
+                100% {
+                        opacity: 1;
+                }
+        }
 
-    @-webkit-keyframes fade-in {
-        0% {
-          opacity: 0;
+        @keyframes fade-in {
+                0% {
+                        opacity: 0;
+                }
+
+                100% {
+                        opacity: 1;
+                }
         }
-        100% {
-          opacity: 1;
-        }
-      }
-      @keyframes fade-in {
-        0% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 1;
-        }
-      }
-    
+
 }
 
 
 
-.animated-to-svg() { // the pulse for svg
-    -webkit-animation: heartbeat 2s ease-in-out infinite both;
-    animation: heartbeat 2s ease-in-out infinite both;
+.animated-to-svg() {
+        // the pulse for svg
+        -webkit-animation: heartbeat 2s ease-in-out infinite both;
+        animation: heartbeat 2s ease-in-out infinite both;
 
-    @-webkit-keyframes heartbeat {
-        from {
-          -webkit-transform: scale(1);
-                  transform: scale(1);
-          -webkit-transform-origin: center center;
-                  transform-origin: center center;
-          -webkit-animation-timing-function: ease-out;
-                  animation-timing-function: ease-out;
+        @-webkit-keyframes heartbeat {
+                from {
+                        -webkit-transform: scale(1);
+                        transform: scale(1);
+                        -webkit-transform-origin: center center;
+                        transform-origin: center center;
+                        -webkit-animation-timing-function: ease-out;
+                        animation-timing-function: ease-out;
+                }
+
+                10% {
+                        -webkit-transform: scale(0.91);
+                        transform: scale(0.91);
+                        -webkit-animation-timing-function: ease-in;
+                        animation-timing-function: ease-in;
+                }
+
+                17% {
+                        -webkit-transform: scale(0.98);
+                        transform: scale(0.98);
+                        -webkit-animation-timing-function: ease-out;
+                        animation-timing-function: ease-out;
+                }
+
+                33% {
+                        -webkit-transform: scale(0.87);
+                        transform: scale(0.87);
+                        -webkit-animation-timing-function: ease-in;
+                        animation-timing-function: ease-in;
+                }
+
+                45% {
+                        -webkit-transform: scale(1);
+                        transform: scale(1);
+                        -webkit-animation-timing-function: ease-out;
+                        animation-timing-function: ease-out;
+                }
         }
-        10% {
-          -webkit-transform: scale(0.91);
-                  transform: scale(0.91);
-          -webkit-animation-timing-function: ease-in;
-                  animation-timing-function: ease-in;
+
+        @keyframes heartbeat {
+                from {
+                        -webkit-transform: scale(1);
+                        transform: scale(1);
+                        -webkit-transform-origin: center center;
+                        transform-origin: center center;
+                        -webkit-animation-timing-function: ease-out;
+                        animation-timing-function: ease-out;
+                }
+
+                10% {
+                        -webkit-transform: scale(0.91);
+                        transform: scale(0.91);
+                        -webkit-animation-timing-function: ease-in;
+                        animation-timing-function: ease-in;
+                }
+
+                17% {
+                        -webkit-transform: scale(0.98);
+                        transform: scale(0.98);
+                        -webkit-animation-timing-function: ease-out;
+                        animation-timing-function: ease-out;
+                }
+
+                33% {
+                        -webkit-transform: scale(0.87);
+                        transform: scale(0.87);
+                        -webkit-animation-timing-function: ease-in;
+                        animation-timing-function: ease-in;
+                }
+
+                45% {
+                        -webkit-transform: scale(1);
+                        transform: scale(1);
+                        -webkit-animation-timing-function: ease-out;
+                        animation-timing-function: ease-out;
+                }
         }
-        17% {
-          -webkit-transform: scale(0.98);
-                  transform: scale(0.98);
-          -webkit-animation-timing-function: ease-out;
-                  animation-timing-function: ease-out;
-        }
-        33% {
-          -webkit-transform: scale(0.87);
-                  transform: scale(0.87);
-          -webkit-animation-timing-function: ease-in;
-                  animation-timing-function: ease-in;
-        }
-        45% {
-          -webkit-transform: scale(1);
-                  transform: scale(1);
-          -webkit-animation-timing-function: ease-out;
-                  animation-timing-function: ease-out;
-        }
-      }
-      @keyframes heartbeat {
-        from {
-          -webkit-transform: scale(1);
-                  transform: scale(1);
-          -webkit-transform-origin: center center;
-                  transform-origin: center center;
-          -webkit-animation-timing-function: ease-out;
-                  animation-timing-function: ease-out;
-        }
-        10% {
-          -webkit-transform: scale(0.91);
-                  transform: scale(0.91);
-          -webkit-animation-timing-function: ease-in;
-                  animation-timing-function: ease-in;
-        }
-        17% {
-          -webkit-transform: scale(0.98);
-                  transform: scale(0.98);
-          -webkit-animation-timing-function: ease-out;
-                  animation-timing-function: ease-out;
-        }
-        33% {
-          -webkit-transform: scale(0.87);
-                  transform: scale(0.87);
-          -webkit-animation-timing-function: ease-in;
-                  animation-timing-function: ease-in;
-        }
-        45% {
-          -webkit-transform: scale(1);
-                  transform: scale(1);
-          -webkit-animation-timing-function: ease-out;
-                  animation-timing-function: ease-out;
-        }
-      }
-      
-      
-              
+
+
+
 }
 
 
-.cta-btn() { // sign up button
-    border: 5px solid transparent;
-    background: #AED6D1;
-    color: #55706D;
-    border-radius: 40px;
-    padding: 15px 30px;
-    overflow: hidden;
-    width: 200px;
+.cta-btn() {
+        // sign up button
+        border: 5px solid transparent;
+        background: #AED6D1;
+        color: #55706D;
+        border-radius: 40px;
+        padding: 15px 30px;
+        overflow: hidden;
+        width: 200px;
 }
 
+
+.icon-scale-in() {
+        
+               
+                -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+ 
+
+        @-webkit-keyframes scale-in-center {
+                0% {
+                        -webkit-transform: scale(0);
+                        transform: scale(0);
+                        opacity: 1;
+                }
+
+                100% {
+                        -webkit-transform: scale(1);
+                        transform: scale(1);
+                        opacity: 1;
+                }
+        }
+
+        @keyframes scale-in-center {
+                0% {
+                        -webkit-transform: scale(0);
+                        transform: scale(0);
+                        opacity: 1;
+                }
+
+                100% {
+                        -webkit-transform: scale(1);
+                        transform: scale(1);
+                        opacity: 1;
+                }
+        }
+
+}

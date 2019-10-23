@@ -14,7 +14,6 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        border: 1px solid @silver;
         margin: 1rem;
         padding: 1rem;
         width: 80%;
@@ -32,41 +31,121 @@
             .col-box {
                 display: flex;
                 flex-direction: column;
-                justify-content: flex-end;
+                justify-content: space-between;
                 align-items: center;
                 width: calc(33% - 2rem);
-                margin: 2rem;      
+                margin: 1px;
                 border: 1px solid @silver;
 
+                &:hover {
+                    -webkit-box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.75);
+                    -moz-box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.75);
+                    box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.75);
 
-                img {
-                    border-radius: 100%;
-                    width: 25rem;
-                    height: 25rem;
+                    #icon-visible {
+                        visibility: visible;
+                        .icon-scale-in();
+                    }
                 }
 
 
-                span {
+                img {
+                    width: 20rem;
+                    height: 20rem;
+                
+                }
+
+                .top-content-holder-row {
                     display: flex;
-                    flex-direction: column;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    border-bottom: 1px solid @silver;
+                    width: 100%;
+                    height: 20%;
+
+            
+
+                    .top-content-holder { // box holders
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        height: 100%;
+                        width: calc(33% - 2rem);
+
+                    
+                       
+
+                        .about-icons {
+                            display: flex;
+                            flex-direction: row;
+                            align-self: center;
+                            justify-content: center;
+                            margin: 1rem;
+                            height: 3rem;
+                            width: 3rem;
+                            overflow: hidden;
+                            visibility: hidden;
+    
+                            &:hover {
+                                fill: @primary-red;
+                            }
+                        }
+
+                        .user-content-holder {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            height: 100%;
+                    
+                            flex-grow: 1;
+    
+                            span {
+                                &:first-child {
+                                    font-size: 2rem;
+                                    letter-spacing: 1px;
+                                }
+                                &:last-child {
+                                    font-size: 1.2rem;
+                                }
+                            }
+                        }
+             
+                    }
+
+                    .content-grow {
+                        flex-grow: 1;
+                    }
+
+                }
+
+      
+      
+
+                .user-content {
+                    border: 1px solid black;
+                    width: 100%;
+                    height: 20%;
+                    display: flex;
+                    flex-direction: row;
                     justify-content: center;
                     align-items: center;
-                    padding-top: 10px;
-                    padding-bottom: 10px;
+                    font-size: 2rem;
+
+                    span {
+                        display: flex;
+                        flex-direction: column;
+                        margin-right: 3rem;
+
+                    }
 
                     &:first-child {
-                        font-size: 2rem;
-                        letter-spacing: 2px;
-                        font-weight: 600;
+                        font-size: 1rem;
                     }
 
-                    &:last-child {
-                        font-size: 1.5rem;
-                        letter-spacing: 2px;
-                        font-weight: 600;
-                    }
-               
-                }        
+                }
               
             }
 
