@@ -889,9 +889,7 @@ body {
 .about-wrapper .about-row .about-col .col-box a {
   text-decoration: none;
   border: none;
-  display: flex;
-  height: 100%;
-  width: 50%;
+  white-space: nowrap;
 }
 @media only screen and (min-width: 300px) and (max-width: 501px) {
   .about-wrapper .about-row .about-col .col-box {
@@ -1007,8 +1005,11 @@ body {
   overflow: hidden;
   visibility: hidden;
 }
-.about-wrapper .about-row .about-col .col-box .top-content-holder-row .top-content-holder .about-icons:hover {
+.about-wrapper .about-row .about-col .col-box .top-content-holder-row .top-content-holder .about-icons:first-child:hover {
   fill: #d95964;
+}
+.about-wrapper .about-row .about-col .col-box .top-content-holder-row .top-content-holder .about-icons:last-child:hover {
+  fill: #304269;
 }
 .about-wrapper .about-row .about-col .col-box .top-content-holder-row .top-content-holder .user-content-holder {
   display: flex;

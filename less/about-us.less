@@ -86,10 +86,9 @@
 
                 a {
                     text-decoration: none;
-                    border: none;
-                    display: flex;
-                    height: 100%;
-                    width: 50%;
+                    border: none;               
+                    white-space: nowrap;       
+            
 
                 }
 
@@ -191,10 +190,19 @@
                             overflow: hidden;
                             visibility: hidden;
                          
-
-                            &:hover {
-                                fill: @primary-red;
+                            &:first-child {
+                                &:hover {
+                                    fill: @primary-red;
+                                }
                             }
+
+                            &:last-child {
+                                &:hover {
+                                    fill: @matte-blue;
+                                }
+                            }
+
+                         
                         }
 
                         .user-content-holder {
