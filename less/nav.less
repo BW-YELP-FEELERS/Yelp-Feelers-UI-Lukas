@@ -7,12 +7,12 @@
     margin-left: 10rem;
     margin-right: 10rem;
 
-    @media @mobile-s {
-
-    }
-
-    @media @mobile {
-                        
+    @media @mobile-s,
+    @mobile {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: space-between;
+        margin: 0 auto;
     }
 
     @media @tablet {
@@ -34,16 +34,24 @@
     @media @desktop-l {
         margin-top: 1.5rem;
     }
-    
+
 
     .logo {
+
+        @media @mobile-s,
+        @mobile {
+            text-align: center;
+            width: 100%;
+            flex-grow: 1;
+        }
+
 
         @media @tablet {
             margin-left: 1rem;
             margin-bottom: 1.1rem;
-           }
+        }
 
-           @media @desktop-s {
+        @media @desktop-s {
             margin-left: 1rem;
             margin-bottom: 1.1rem;
         }
@@ -53,9 +61,7 @@
             margin-bottom: 1.1rem;
         }
 
-        @media @desktop-l {
-        
-        }
+        @media @desktop-l {}
 
         h1 {
             color: @primary-red;
@@ -65,29 +71,19 @@
             letter-spacing: 5px;
             .animated-to-bg();
 
-            @media @mobile-s {
+            @media @mobile-s {}
 
-            }
+            @media @mobile {}
 
-            @media @mobile {
-                        
-            }
-        
             @media @tablet {
                 letter-spacing: 3px;
             }
-        
-            @media @desktop-s {
-        
-            }
-    
-            @media @desktop-m {
-            
-            }
-    
-            @media @desktop-l {
-            
-            }
+
+            @media @desktop-s {}
+
+            @media @desktop-m {}
+
+            @media @desktop-l {}
         }
 
         span {
@@ -97,29 +93,17 @@
             letter-spacing: 1px;
             .animated-to-bg();
 
-            @media @mobile-s {
+            @media @mobile-s {}
 
-            }
+            @media @mobile {}
 
-            @media @mobile {
-                        
-            }
-        
-            @media @tablet {
-               
-            }
-        
-            @media @desktop-s {
-        
-            }
-    
-            @media @desktop-m {
-            
-            }
-    
-            @media @desktop-l {
-            
-            }
+            @media @tablet {}
+
+            @media @desktop-s {}
+
+            @media @desktop-m {}
+
+            @media @desktop-l {}
         }
 
     }
@@ -203,8 +187,8 @@
                 list-style: none;
                 font-weight: 600;
                 letter-spacing: 1px;
-               
-             
+
+
 
 
                 a {
@@ -217,38 +201,26 @@
                     text-transform: uppercase;
                     padding: 1.5rem 3rem;
                     margin-bottom: 3px;
-                    height: 20rem; 
+                    height: 20rem;
                     width: 17rem;
 
-                 
-                    @media @mobile-s {
 
-                    }
+                    @media @mobile-s {}
 
-                    @media @mobile {
-                        
-                    }
-                
-                    @media @tablet {
-                       
-                    }
-                
-                    @media @desktop-s {
-        
-                    }
-            
-                    @media @desktop-m {
-                    
-                    }
-            
-                    @media @desktop-l {
-                    
-                    }
+                    @media @mobile {}
+
+                    @media @tablet {}
+
+                    @media @desktop-s {}
+
+                    @media @desktop-m {}
+
+                    @media @desktop-l {}
 
 
                     &:hover {
                         font-weight: 900;
-                       
+
 
                     }
 
@@ -261,15 +233,53 @@
                     }
 
                 }
+
+                @media @mobile-s {
+                    display: none;
+                }
+
+                @media @mobile {
+                    display: none;
+                }
             }
 
-            .login-svg  {
-               
+            .login-svg {
+
                 width: 2rem;
                 height: 2rem;
                 .animated-to-svg();
             }
 
+        }
+    }
+
+    @media @mobile-s,
+    @mobile {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .burgerNavEmpty {
+        height: 100%;
+        width: calc(22% - 2rem);
+
+    }
+
+    .burgerNav {
+        width: calc(22% - 2rem);
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .burgerLine {
+            width: 25px;
+            height: 3px;
+            background: black;
+            margin: 3px;
         }
     }
 }
