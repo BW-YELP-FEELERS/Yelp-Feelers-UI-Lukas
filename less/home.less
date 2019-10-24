@@ -11,6 +11,22 @@
         margin: 0 auto;              
     }
 
+    @media @tablet {
+
+    }
+
+    @media @desktop-s {
+        max-width: 1370px;
+    }
+
+    @media @desktop-m {
+        max-width: 1570px;
+    }
+
+    @media @desktop-l {
+        max-width: 1870px;
+    }
+
 
     .main_view { // Component of media query 1
         display: flex;
@@ -45,7 +61,7 @@
         }
 
         @media @desktop-s {
-        
+          
         }
 
         @media @desktop-m {
@@ -91,11 +107,12 @@
             }
 
             @media @desktop-s {
-        
+                width: 120rem;
+          
             }
     
             @media @desktop-m {
-            
+                width: 125rem;
             }
     
             @media @desktop-l {
@@ -103,7 +120,7 @@
             }
 
 
-            .content { // Component of media query 3
+            .content { // Component of media query 3 // no need to really touch if width is 100%
                 display: flex;
                 width: 100%;
                 height: 100%;
@@ -135,11 +152,14 @@
                 }
 
                 @media @desktop-s {
-        
+                    width: 100%;
+                    height: 100%;
+               
                 }
         
                 @media @desktop-m {
-                
+                    width: 100%;
+                    height: 100%;
                 }
         
                 @media @desktop-l {
@@ -184,7 +204,7 @@
                     }
 
                     @media @desktop-s {
-        
+                        
                     }
             
                     @media @desktop-m {
@@ -259,15 +279,24 @@
                         }
 
                         @media @desktop-s {
+
+                            #btn-mobile-mq {
+                                display: none;
+                            }
         
                         }
                 
                         @media @desktop-m {
                         
+                            #btn-mobile-mq {
+                                display: none;
+                            }
                         }
                 
                         @media @desktop-l {
-                        
+                            #btn-mobile-mq {
+                                display: none;
+                            }
                         }
 
                     }
@@ -299,7 +328,8 @@
                         }
 
                         @media @desktop-s {
-        
+                     
+                           
                         }
                 
                         @media @desktop-m {
@@ -381,7 +411,8 @@
                                 }
 
                                 @media @desktop-s {
-        
+                                    font-size: 6em;
+                                    margin-bottom: 2rem;
                                 }
                         
                                 @media @desktop-m {
@@ -477,7 +508,12 @@
                     }
 
                     @media @desktop-s {
-        
+                        justify-content: center;
+                        align-items: center;
+                        margin-left: auto;
+                        margin-right: auto;
+                        margin-top: 1rem;
+                        height: 100%;
                     }
             
                     @media @desktop-m {
@@ -698,7 +734,9 @@
                                 
                                 }
                         
-                                @media @desktop-l {
+                                @media @desktop-l {      #btn-mobile-mq {
+                                    display: none;
+                                }
                                 
                                 }
 
@@ -742,19 +780,31 @@
                             }
                         }
 
+                    .cta-button {
+                        .cta-btn();
+                       }
+
+                       @media @mobile-s, @mobile, @tablet {
                         .cta-button {
                             display: none;
                         }
-
-               
-
-          
+                       }
+                    
+                       @media @mobile-s, @mobile, @tablet {
+                        #svg-mobile-mq {
+                            display: flex;
+                        }
+                       }
+                     
                     }
 
 
                 }
             }
-
+            #svg-mobile-mq {
+                display: none;
+            }
+      
         }
     }
 }
