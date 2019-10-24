@@ -886,6 +886,13 @@ body {
   border: 1px solid #E2E9ED;
   margin: 1rem;
 }
+.about-wrapper .about-row .about-col .col-box a {
+  text-decoration: none;
+  border: none;
+  display: flex;
+  height: 100%;
+  width: 50%;
+}
 @media only screen and (min-width: 300px) and (max-width: 501px) {
   .about-wrapper .about-row .about-col .col-box {
     flex-direction: column;
@@ -984,10 +991,10 @@ body {
 .about-wrapper .about-row .about-col .col-box .top-content-holder-row .top-content-holder {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   height: 100%;
-  width: calc(33% - 2rem);
+  width: 100%;
 }
 .about-wrapper .about-row .about-col .col-box .top-content-holder-row .top-content-holder .about-icons {
   display: flex;

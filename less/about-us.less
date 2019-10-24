@@ -83,7 +83,16 @@
                 background: #FFF;
                 border: 1px solid #E2E9ED;
                 margin: 1rem;
-             
+
+                a {
+                    text-decoration: none;
+                    border: none;
+                    display: flex;
+                    height: 100%;
+                    width: 50%;
+
+                }
+
 
                 @media @mobile {
                     flex-direction: column;
@@ -108,8 +117,8 @@
                     box-shadow: 0px 0px 11px 4px #E2E9ED;
                     transform: scale(1.05);
                     transition: box-shadow 0.2s ease,
-                                transform 0.2s ease;
-                               
+                        transform 0.2s ease;
+
 
                     @media @mobile {
                         -webkit-box-shadow: 0px 7px 8px 0px rgba(112, 128, 144, 0.2);
@@ -162,10 +171,11 @@
                         // box holders
                         display: flex;
                         flex-direction: row;
-                        justify-content: center;
+                        justify-content: flex-end;
                         align-items: center;
                         height: 100%;
-                        width: calc(33% - 2rem);
+                        width: 100%;
+                      
 
 
 
@@ -180,6 +190,7 @@
                             width: 3rem;
                             overflow: hidden;
                             visibility: hidden;
+                         
 
                             &:hover {
                                 fill: @primary-red;
@@ -195,12 +206,12 @@
                             flex-wrap: wrap;
                             flex-grow: 1;
                             text-align: center;
-                     
+
                         }
 
                     }
 
-             
+
 
 
                     .content-grow {
@@ -210,7 +221,7 @@
                 }
 
                 .mid-content-holder {
-                    
+
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
@@ -222,18 +233,18 @@
                         font-size: 2rem;
                         letter-spacing: 1px;
                         font-weight: 600;
-                        
+
                     }
 
                     .top-span-add {
                         font-size: 1.5rem;
-                        font-weight: 400;   
+                        font-weight: 400;
                     }
 
                     .bottom-span {
                         font-size: 1.5rem;
                         font-weight: 600;
-                       color: @matte-blue;
+                        color: @matte-blue;
                     }
                 }
 
