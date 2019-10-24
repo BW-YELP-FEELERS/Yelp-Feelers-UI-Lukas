@@ -3,8 +3,12 @@
     width: 100%;
     height: 100%;
 
-    @media @mobile {
+    @media @mobile-s {
         margin: 0 auto;
+    }
+
+    @media @mobile {
+        margin: 0 auto;              
     }
 
 
@@ -16,12 +20,16 @@
         height: 80vh;
         margin: 10rem auto;
 
-        @media @mobile {
+        @media @mobile-s {
             flex-direction: column;
             width: 100%;
             height: 100%;
             margin: 0 auto;
             padding: 1rem;
+        }
+
+        @media @mobile {
+                        
         }
 
         @media @tablet {
@@ -32,12 +40,16 @@
             padding: 1rem;
         }
 
-        @media @tablet-xl {
-            flex-direction: column;
-            width: 100%;
-            height: 88rem;
-            margin: 0 auto;
-            padding: 1rem;
+        @media @desktop-s {
+        
+        }
+
+        @media @desktop-m {
+        
+        }
+
+        @media @desktop-l {
+        
         }
 
 
@@ -50,12 +62,16 @@
             height: 100%;
             margin: 1;
 
-            @media @mobile {
+            @media @mobile-s {
                 flex-direction: column;
                 width: 100%;
                 height: 100%;
                 margin: 1;
                 padding: 1rem;
+            }
+
+            @media @mobile {
+                        
             }
 
             @media @tablet {
@@ -66,12 +82,16 @@
                 padding: 1rem;
             }
 
-            @media @tablet-xl {
-                flex-direction: column;
-                width: 100%;
-                height: 100%;
-                margin: 0 auto;
-                padding: 1rem;
+            @media @desktop-s {
+        
+            }
+    
+            @media @desktop-m {
+            
+            }
+    
+            @media @desktop-l {
+            
             }
 
 
@@ -82,12 +102,16 @@
                 background: transparent; 
                 border-radius: 25px;
 
-                @media @mobile {
+                @media @mobile-s {
                     width: 100%;
                     height: 100%;
                     margin: 1;
                     padding: 1rem;
                     flex-direction: column;
+                }
+
+                @media @mobile {
+                        
                 }
 
                 @media @tablet {
@@ -98,12 +122,16 @@
                     padding: 1rem;
                 }
 
-                @media @tablet-xl {
-                    flex-direction: column;
-                    width: 100%;
-                    height: 100%;
-                    margin: 0 auto;
-                    padding: 1rem;
+                @media @desktop-s {
+        
+                }
+        
+                @media @desktop-m {
+                
+                }
+        
+                @media @desktop-l {
+                
                 }
 
                 .row-default {
@@ -119,12 +147,16 @@
                     justify-content: space-evenly;
                     align-items: center;
 
-                    @media @mobile {
-                        width: 35rem;
+                    @media @mobile-s {
+                        width: 85%;
                         height: 100%;
                         margin: 0 auto;
                         padding: 1rem;   
                         border-bottom: 1px solid rgba(192,192,192,0.6);
+                    }
+
+                    @media @mobile {
+                        
                     }
 
                     @media @tablet {
@@ -135,12 +167,16 @@
                         border-bottom: 1px solid rgba(192,192,192,0.6);
                     }
 
-                    @media @tablet-xl {
-                        width: 90%;
-                        height: 100%;
-                        margin: 0 auto;
-                        padding: 1rem;
-                        border-bottom: 1px solid rgba(192,192,192,0.6);
+                    @media @desktop-s {
+        
+                    }
+            
+                    @media @desktop-m {
+                    
+                    }
+            
+                    @media @desktop-l {
+                    
                     }
 
                     .row-left-col {
@@ -152,7 +188,7 @@
                         height: calc(100% - 2rem);
                         margin: 1rem;
 
-                        @media @mobile {
+                        @media @mobile-s {
                             justify-content: space-between;
 
                             #btn-mobile-mq {
@@ -170,6 +206,9 @@
 
                         }
 
+                        @media @mobile {
+                        
+                        }
 
                         @media @tablet {
                             justify-content: space-between;
@@ -190,30 +229,16 @@
 
                         }
 
-                        @media @tablet-xl {
-                            justify-content: space-between;
-
-                            #btn-mobile-mq {
-                                .cta-btn();
-                            }
-
-                            .mobile-svg{
-                                display: none;
-                            }
-
-                            img {
-                                height: 100%;
-                               
-                            }
-
-                            width: 100%;
-                            height: 100%;
-
+                        @media @desktop-s {
+        
                         }
-
-                        @media @desktop {
-
-                      
+                
+                        @media @desktop-m {
+                        
+                        }
+                
+                        @media @desktop-l {
+                        
                         }
 
                     }
@@ -226,10 +251,14 @@
                         width: 100%;
                         flex-grow: 1;
 
-                        @media @mobile {                 
+                        @media @mobile-s {                 
                             width: 100%;
                             height: 100%;
                             margin: 1rem;
+                        }
+
+                        @media @mobile {
+                        
                         }
 
                         @media @tablet {                 
@@ -238,10 +267,16 @@
                             margin: 1rem;
                         }
 
-                        @media @tablet-xl {
-                            width: 100%;
-                            height: 100%;
-                            margin: 1rem;
+                        @media @desktop-s {
+        
+                        }
+                
+                        @media @desktop-m {
+                        
+                        }
+                
+                        @media @desktop-l {
+                        
                         }
 
                         .meet-container {
@@ -251,10 +286,14 @@
                             width: 100%;
                             height: 20rem;
 
-                            @media @mobile {
+                            @media @mobile-s {
                                 width: 100%;
                                 height: 100%;
                                 margin: 1rem;
+                            }
+
+                            @media @mobile {
+                        
                             }
 
                             @media @tablet {
@@ -263,10 +302,16 @@
                                 margin: 1rem;
                             }
 
-                            @media @tablet-xl {
-                                width: 100%;
-                                height: 100%;
-                                margin: 1rem;
+                            @media @desktop-s {
+        
+                            }
+                    
+                            @media @desktop-m {
+                            
+                            }
+                    
+                            @media @desktop-l {
+                            
                             }
 
                             h1 {
@@ -274,28 +319,38 @@
                                 font-weight: 900;
                                 letter-spacing: 1px;
 
-                                @media @mobile {
+                                @media @mobile-s {
+                                    text-align: center;
                                     width: 100%;
                                     height: 100%;
-                                    font-size: 2.3rem;
+                                    font-size: 4.9em;
                                     letter-spacing: 0px;
                                     margin-bottom: 1rem;
+                                }
+
+                                @media @mobile {
+                        
                                 }
 
                                 @media @tablet {
+                                    text-align: center;
                                     width: 100%;
                                     height: 100%;
-                                    font-size: 5em;
-                                    letter-spacing: 0px;
-                                    margin-bottom: 1rem;
-                                }
-
-                                @media @tablet-xl {
-                                    width: 100%;
-                                    height: 30%;
-                                    font-size: 4.5em;
+                                    font-size: 7em;
                                     letter-spacing: 0px;
                                     margin-bottom: 2rem;
+                                }
+
+                                @media @desktop-s {
+        
+                                }
+                        
+                                @media @desktop-m {
+                                
+                                }
+                        
+                                @media @desktop-l {
+                                
                                 }
                             }
 
@@ -304,23 +359,37 @@
                                 font-weight: 600;
                                 letter-spacing: 1.2px;
 
-                                @media @mobile {
+                                @media @mobile-s {
+                                    text-align: center;
                                     width: 100%;
                                     height: 100%;
                                     font-size: 1.9rem;
                                     letter-spacing: 0px;
                                 }
 
+                                @media @mobile {
+                        
+                                }
+
                                 @media @tablet {
+                                    text-align: center;
                                     width: 100%;
                                     height: 100%;
-                                    font-size: 2rem;
+                                    font-size: 2.5rem;
                                     letter-spacing: 0px;
                                     margin-bottom: 1rem;
                                 }
 
-                                @media @tablet-xl {
-                 
+                                @media @desktop-s {
+        
+                                }
+                        
+                                @media @desktop-m {
+                                
+                                }
+                        
+                                @media @desktop-l {
+                                
                                 }
 
                                 span {
@@ -340,11 +409,15 @@
                     flex-direction: column;
                     justify-content: flex-start;
 
-                    @media @mobile {
-                        width: 35rem;
+                    @media @mobile-s {
+                        width: 85%;
                         height: 100%;
                         margin: 0 auto;
                         padding: 1rem;
+                    }
+
+                    @media @mobile {
+                        
                     }
 
                     @media @tablet {
@@ -355,12 +428,16 @@
                         padding: 1rem;
                     }
 
-                    @media @tablet-xl {
-                        align-items: center;
-                        width: 90%;
-                        height: 100%;
-                        margin: 0 auto;
-                        padding: 1rem;
+                    @media @desktop-s {
+        
+                    }
+            
+                    @media @desktop-m {
+                    
+                    }
+            
+                    @media @desktop-l {
+                    
                     }
 
 
@@ -375,12 +452,16 @@
                         background: transparent;
                         border-radius: 25px;
 
-                        @media @mobile {
+                        @media @mobile-s {
                             width: 100%;
                             height: 100%;
                             margin-bottom: 2rem;
                             padding: 1rem;
                            
+                        }
+
+                        @media @mobile {
+                        
                         }
 
                         @media @tablet {
@@ -391,11 +472,16 @@
                            
                         }
 
-                        @media @tablet-xl {
-                            width: 90%;
-                            height: 100%;
-                            margin-bottom: 2rem;
-                            padding: 1rem;
+                        @media @desktop-s {
+        
+                        }
+                
+                        @media @desktop-m {
+                        
+                        }
+                
+                        @media @desktop-l {
+                        
                         }
 
                         .content-row {
@@ -404,10 +490,14 @@
                             width: 100%;
                             height: calc(33% - 2rem);
 
-                            @media @mobile {
+                            @media @mobile-s {
                                 width: 100%;
                                 height: 100%;
                                 flex-direction: column;
+                            }
+
+                            @media @mobile {
+                        
                             }
 
                             @media @tablet {
@@ -416,10 +506,16 @@
                                 flex-direction: column;
                             }
 
-                            @media @tablet-xl {
-                                width: 100%;
-                                height: 100%;
-                                flex-direction: column;
+                            @media @desktop-s {
+        
+                            }
+                    
+                            @media @desktop-m {
+                            
+                            }
+                    
+                            @media @desktop-l {
+                            
                             }
 
                             .content-col-icon {
@@ -429,9 +525,13 @@
                                 margin-top: 2px;
                                 width: 10%;
 
-                                @media @mobile {
+                                @media @mobile-s {
                                     width: 100%;
                                     height: 100%;
+                                }
+
+                                @media @mobile {
+                        
                                 }
 
                                 @media @tablet {
@@ -440,44 +540,77 @@
                                     
                                 }
 
-                                @media @tablet-xl {
-                                    width: 100%;
-                                    height: 100%;
+                                @media @desktop-s {
+        
+                                }
+                        
+                                @media @desktop-m {
+                                
+                                }
+                        
+                                @media @desktop-l {
+                                
                                 }
 
                                 .star-1 {
-                                    width: 30px;
-                                    height: 30px;
-                                    fill: rgba(255, 165, 0, 0.8)
+                                    width: 3rem;
+                                    height: 3rem;
+                                    fill: rgba(255, 165, 0, 0.8);
+
+                                    @media @tablet {
+                                        width: 5rem;
+                                        height: 5rem;
+                                    }
                                 }
 
                                 .arrow-svg {
-                                    width: 30px;
-                                    height: 30px;
+                                    width: 3rem;
+                                    height: 3rem;
+
+                                    @media @tablet {
+                                        width: 5rem;
+                                        height: 5rem;
+                                    }
                                 }
 
                                 .star-2 {
-                                    width: 30px;
-                                    height: 30px;
+                                    width: 3rem;
+                                    height: 3rem;
                                     fill: @primary-red;
+
+                                    @media @tablet {
+                                        width: 5rem;
+                                        height: 5rem;
+                                    }
                                 }
 
                                 svg {
-                                    @media @mobile {
+                                    @media @mobile-s {
                                         width: 100%;
                                         height: 100%;
                                         margin: 1rem;
                                     }
+
+                                    @media @mobile {
+                        
+                                    }
+
                                     @media @tablet {
                                         width: 100%;
                                         height: 100%;
                                         margin: 1rem;
                                     }
 
-                                    @media @tablet-xl {
-                                        width: 100%;
-                                        height: 100%;
-                                        margin: 1rem;
+                                    @media @desktop-s {
+        
+                                    }
+                            
+                                    @media @desktop-m {
+                                    
+                                    }
+                            
+                                    @media @desktop-l {
+                                    
                                     }
                                 }
                             }
@@ -488,16 +621,29 @@
                                 justify-content: flex-start;
                                 width: 100%;
 
-                                @media @mobile {
+                                @media @mobile-s {
                                    text-align: center;
                                    
                                 }
+
+                                @media @mobile {
+                        
+                                }
+
                                 @media @tablet {
                                     text-align: center;         
                                  }
 
-                                 @media @tablet-xl {
-                                    text-align: center;   
+                                 @media @desktop-s {
+        
+                                }
+                        
+                                @media @desktop-m {
+                                
+                                }
+                        
+                                @media @desktop-l {
+                                
                                 }
 
                                 span {
@@ -507,26 +653,36 @@
                                     font-weight: 400;
                                     letter-spacing: 1px;
 
-                                    @media @mobile {
+                                    @media @mobile-s {
                                         font-size: 1.78rem;
                                         width: 100%;
                                         height: 100%;    
                                     }
+
+                                    @media @mobile {
+                        
+                                    }
+
                                     @media @tablet {
-                                        font-size: 2.2rem;
+                                        font-size: 2.5rem;
                                         width: 100%;
                                         height: 100%;    
                                     }
 
-                                    @media @tablet-xl {
-                                        font-size: 2.2rem;
-                                        width: 100%;
-                                        height: 100%; 
+                                    @media @desktop-s {
+        
+                                    }
+                            
+                                    @media @desktop-m {
+                                    
+                                    }
+                            
+                                    @media @desktop-l {
+                                    
                                     }
                                 }
                             }
                         }
-
 
                         .cta-button {
                             display: none;
