@@ -8,7 +8,7 @@
     }
 
 
-    .main_view {
+    .main_view { // Component of media query 1
         display: flex;
         justify-content: center;
         align-items: center;
@@ -18,7 +18,7 @@
 
         @media @mobile {
             flex-direction: column;
-            width: 35rem;
+            width: 100%;
             height: 100%;
             margin: 0 auto;
             padding: 1rem;
@@ -26,24 +26,24 @@
 
 
 
-        .home_container {
+        .home_container { // Component of media query 2
             display: flex;
             justify-content: center;
             align-items: center;
             width: 80%;
             height: 100%;
-            margin: 0 auto;
+            margin: 1;
 
             @media @mobile {
                 flex-direction: column;
-                width: 35rem;
+                width: 100%;
                 height: 100%;
-                margin: 1rem;
+                margin: 1;
                 padding: 1rem;
             }
 
 
-            .content {
+            .content { // Component of media query 3
                 display: flex;
                 width: 100%;
                 height: 100%;
@@ -51,9 +51,9 @@
                 border-radius: 25px;
 
                 @media @mobile {
-                    width: 35rem;
+                    width: 100%;
                     height: 100%;
-                    margin: 1rem;
+                    margin: 1;
                     padding: 1rem;
                     flex-direction: column;
                 }
@@ -74,8 +74,9 @@
                     @media @mobile {
                         width: 35rem;
                         height: 100%;
-                        margin: 1rem;
+                        margin: 0 auto;
                         padding: 1rem;
+                        
                         border-bottom: 1px solid rgba(192,192,192,0.6);
                     }
 
@@ -207,7 +208,7 @@
                         border-radius: 25px;
 
                         @media @mobile {
-                            width: 30rem;
+                            width: 100%;
                             height: 100%;
                             margin-bottom: 2rem;
                             padding: 1rem;
