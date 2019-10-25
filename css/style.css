@@ -1257,6 +1257,20 @@ body {
 .container .main_view .home_container #svg-mobile-mq {
   display: none;
 }
+.container footer {
+  width: 98%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.container footer .cfooter {
+  font-size: 2rem;
+  color: #252223;
+}
+.container footer .cfooter .copyright {
+  color: #252223;
+}
 .about-wrapper {
   display: flex;
   flex-direction: row;
