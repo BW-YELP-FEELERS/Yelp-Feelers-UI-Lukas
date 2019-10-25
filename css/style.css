@@ -1174,6 +1174,11 @@ body {
     font-size: 4.1em;
   }
 }
+@media only screen and (min-width: 1025px) and (min-height: 800px) {
+  .container .main_view .home_container .content .row-right .col-two .content-row .content-col-text span {
+    font-size: 3.5em;
+  }
+}
 .container .main_view .home_container .content .row-right .col-two a {
   background: rgba(255, 255, 255, 0);
   border-bottom: 1px solid;
