@@ -438,12 +438,7 @@ body {
   width: 100%;
   height: 100%;
 }
-@media only screen and (min-width: 300px) and (max-width: 500px) {
-  .container {
-    margin: 0 auto;
-  }
-}
-@media only screen and (min-width: 501px) and (max-width: 700px) {
+@media only screen and (min-width: 300px) and (max-width: 500px), only screen and (min-width: 501px) and (max-width: 700px), only screen and (min-width: 701px) and (max-width: 1024px) {
   .container {
     margin: 0 auto;
   }
@@ -472,25 +467,7 @@ body {
   margin: 10rem auto;
   background: red;
 }
-@media only screen and (min-width: 300px) and (max-width: 500px) {
-  .container .main_view {
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    padding: 1rem;
-  }
-}
-@media only screen and (min-width: 501px) and (max-width: 700px) {
-  .container .main_view {
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    padding: 1rem;
-  }
-}
-@media only screen and (min-width: 701px) and (max-width: 1024px) {
+@media only screen and (min-width: 300px) and (max-width: 500px), only screen and (min-width: 501px) and (max-width: 700px), only screen and (min-width: 701px) and (max-width: 1024px) {
   .container .main_view {
     flex-direction: column;
     width: 100%;
@@ -563,16 +540,7 @@ body {
   border-radius: 25px;
   background: blue;
 }
-@media only screen and (min-width: 300px) and (max-width: 500px) {
-  .container .main_view .home_container .content {
-    width: 100%;
-    height: 100%;
-    margin: 1;
-    padding: 1rem;
-    flex-direction: column;
-  }
-}
-@media only screen and (min-width: 501px) and (max-width: 700px) {
+@media only screen and (min-width: 300px) and (max-width: 500px), only screen and (min-width: 501px) and (max-width: 700px) {
   .container .main_view .home_container .content {
     width: 100%;
     height: 100%;
@@ -590,19 +558,7 @@ body {
     padding: 1rem;
   }
 }
-@media only screen and (min-width: 1025px) and (max-width: 1400px) {
-  .container .main_view .home_container .content {
-    width: 100%;
-    height: 100%;
-  }
-}
-@media only screen and (min-width: 1401px) and (max-width: 1600px) {
-  .container .main_view .home_container .content {
-    width: 100%;
-    height: 100%;
-  }
-}
-@media only screen and (min-width: 1601px) and (max-width: 1900px) {
+@media only screen and (min-width: 1025px) and (max-width: 1400px), only screen and (min-width: 1401px) and (max-width: 1600px), only screen and (min-width: 1601px) and (max-width: 1900px) {
   .container .main_view .home_container .content {
     width: 100%;
     height: 100%;
@@ -610,6 +566,7 @@ body {
 }
 .container .main_view .home_container .content .row-default {
   margin: 2rem;
+  padding: 1rem;
   width: 48%;
   background: green;
 }
@@ -623,6 +580,8 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  padding: 1rem;
+  border: 1px solid black;
 }
 @media only screen and (min-width: 300px) and (max-width: 500px) {
   .container .main_view .home_container .content .row-left {
@@ -659,6 +618,7 @@ body {
   width: 100%;
   height: calc(100% - 2rem);
   margin: 1rem;
+  border: 1px solid black;
 }
 @media only screen and (min-width: 300px) and (max-width: 500px) {
   .container .main_view .home_container .content .row-left .row-left-col {
@@ -816,6 +776,7 @@ body {
   justify-content: flex-start;
   width: 100%;
   height: 20rem;
+  border: 1px solid black;
 }
 @media only screen and (min-width: 300px) and (max-width: 500px) {
   .container .main_view .home_container .content .row-left .header-home .meet-container {
@@ -898,6 +859,11 @@ body {
     font-size: 6em;
   }
 }
+@media only screen and (min-width: 1095px) and (max-width: 11146px) {
+  .container .main_view .home_container .content .row-left .header-home .meet-container h1 {
+    font-size: 6.6em;
+  }
+}
 .container .main_view .home_container .content .row-left .header-home .meet-container h3 {
   font-size: 2rem;
   font-weight: 600;
@@ -966,6 +932,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  border: 1px solid black;
+  padding: 1rem;
 }
 @media only screen and (min-width: 300px) and (max-width: 500px) {
   .container .main_view .home_container .content .row-right {
@@ -1347,6 +1315,16 @@ body {
     height: 90%;
   }
 }
+@media only screen and (min-width: 1401px) and (max-width: 1600px) {
+  .about-wrapper .about-row {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1601px) and (max-width: 1900px) {
+  .about-wrapper .about-row {
+    width: 100%;
+  }
+}
 .about-wrapper .about-row .about-col {
   display: flex;
   flex-direction: row;
@@ -1379,12 +1357,6 @@ body {
     flex-wrap: wrap;
     width: 100%;
     height: 100%;
-  }
-}
-@media only screen and (min-width: 1025px) and (max-width: 1400px) {
-  .about-wrapper .about-row .about-col {
-    height: 100%;
-    width: 100%;
   }
 }
 .about-wrapper .about-row .about-col .col-box {
@@ -1427,6 +1399,21 @@ body {
     height: 100%;
   }
 }
+@media only screen and (min-width: 1025px) and (max-width: 1400px) {
+  .about-wrapper .about-row .about-col .col-box {
+    height: 40rem;
+  }
+}
+@media only screen and (min-width: 1401px) and (max-width: 1600px) {
+  .about-wrapper .about-row .about-col .col-box {
+    height: 43rem;
+  }
+}
+@media only screen and (min-width: 1601px) and (max-width: 1900px) {
+  .about-wrapper .about-row .about-col .col-box {
+    height: 45rem;
+  }
+}
 .about-wrapper .about-row .about-col .col-box:hover {
   border: 1px solid rgba(242, 242, 240, 0.9);
   -webkit-box-shadow: 0px 0px 11px 4px #E2E9ED;
@@ -1452,7 +1439,16 @@ body {
 @media only screen and (min-width: 701px) and (max-width: 1024px) {
   .about-wrapper .about-row .about-col .col-box:hover {
     margin: 0 auto;
-    width: 421px;
+    width: 360px;
+    -webkit-box-shadow: 0px 7px 8px 0px rgba(112, 128, 144, 0.2);
+    -moz-box-shadow: 0px 7px 8px 0px rgba(112, 128, 144, 0.2);
+    box-shadow: 0px 7px 8px 0px rgba(112, 128, 144, 0.2);
+  }
+}
+@media only screen and (min-width: 701px) and (max-width: 737px) {
+  .about-wrapper .about-row .about-col .col-box:hover {
+    margin: 0 auto;
+    width: 340px;
     -webkit-box-shadow: 0px 7px 8px 0px rgba(112, 128, 144, 0.2);
     -moz-box-shadow: 0px 7px 8px 0px rgba(112, 128, 144, 0.2);
     box-shadow: 0px 7px 8px 0px rgba(112, 128, 144, 0.2);
