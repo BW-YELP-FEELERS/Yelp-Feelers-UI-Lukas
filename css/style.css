@@ -208,6 +208,12 @@ body {
     opacity: 1;
   }
 }
+@media only screen and (min-width: 701px) and (max-width: 1024px) {
+  .header .logo {
+    font-size: 3rem;
+    overflow: hidden;
+  }
+}
 .header .logo span {
   color: #252223;
   font-size: calc(5rem / 2);
@@ -231,6 +237,12 @@ body {
   }
   100% {
     opacity: 1;
+  }
+}
+@media only screen and (min-width: 701px) and (max-width: 1024px) {
+  .header .logo span {
+    font-size: 2rem;
+    overflow: hidden;
   }
 }
 .header .navbar {
@@ -268,6 +280,11 @@ body {
   font-weight: 600;
   letter-spacing: 1px;
 }
+@media only screen and (min-width: 701px) and (max-width: 1024px) {
+  .header .navbar .navul .nav_item {
+    font-size: 1.9rem;
+  }
+}
 .header .navbar .navul .nav_item a {
   color: #252223;
   display: flex;
@@ -279,6 +296,13 @@ body {
   margin-bottom: 3px;
   height: 20rem;
   width: 17rem;
+}
+@media only screen and (min-width: 701px) and (max-width: 1024px) {
+  .header .navbar .navul .nav_item a {
+    height: 10rem;
+    padding: 1.5rem 1rem;
+    width: 14rem;
+  }
 }
 .header .navbar .navul .nav_item a:hover {
   font-weight: 900;
