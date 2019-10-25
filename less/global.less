@@ -22,21 +22,18 @@ body {
 
 // global media queries
 
+@media @tablet, @desktop-s, @desktop-m, @desktop-l, @desktop-xl {
+  .burger {
+    display: none;
+  }
+}
+
+
 @media @desktop-xl {
 #btn-mobile-mq {
   display: none;
 }
 }
 
-@media @tablet, @desktop-s, @desktop-m, @desktop-l {
-  .burgerNav {
-    display: none;
-    .burgerLine {
-      display: none;
-    }
-  }
 
-  .burgerNavEmpty {
-    display: none;
-  }
-}
+
