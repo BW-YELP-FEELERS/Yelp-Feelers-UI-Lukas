@@ -120,24 +120,42 @@
 
 .cta-btn() {
         // sign up button
-        border: 5px solid transparent;
-        background: @primary-red;
-        color: @smoke;
-        border-radius: 40px;
-        padding: 15px 30px;
-        overflow: hidden;
-        width: 200px;
-        font-size: 1.4rem;
+        cursor: pointer;
+        font-size: 2rem;
         font-weight: 900;
-        text-align: center;
+        line-height: 4rem;
+        margin-top: 3rem;
+        max-width: 300rem;
+        width: 25rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        background: @primary-red;
+        border: 1px solid #fff;
+        border-radius: 15px;
+        color: @matte-black;
+        
+
+
+        &:visited {}
+
+        &:hover, &:active {
+                transition: all 400ms ease-in-out;
+                -webkit-transition: all 400ms ease-in-out;
+                -moz-transition: all 400ms ease-in-out;
+                -ms-transition: all 400ms ease-in-out;
+                -o-transition: all 400ms ease-in-out;
+                background: @matte-black;
+                color: @primary-red;
+                
+        }
 }
 
 
 .icon-scale-in() {
-        
-               
-                -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-                animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+
+        -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 
         @-webkit-keyframes scale-in-center {
                 0% {
@@ -168,4 +186,3 @@
         }
 
 }
-

@@ -173,9 +173,11 @@
                 background: white;
                 border-bottom: 1px solid @silver;
                 transform: translateY(-100%);
+                pointer-events: none;
 
                 &.active {
                     transform: translateY(0%);
+                    pointer-events: all;
                 }
             }
 
@@ -209,6 +211,7 @@
                     margin-bottom: 3px;
                     height: 20rem;
                     width: 17rem;
+                    color: inherit;
 
                     @media @tablet {
                         height: 10rem;
@@ -229,6 +232,12 @@
 
                     .login-btn {
                         .animated-to-bg();
+                    }
+
+                    &:visited {
+                        color: inherit;
+                        text-decoration: none;
+                        background: transparent;
                     }
 
                 }
