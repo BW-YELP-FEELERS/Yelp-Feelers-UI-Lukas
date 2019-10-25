@@ -470,6 +470,7 @@ body {
   width: 100%;
   height: 80vh;
   margin: 10rem auto;
+  background: red;
 }
 @media only screen and (min-width: 300px) and (max-width: 500px) {
   .container .main_view {
@@ -505,6 +506,7 @@ body {
   width: 80%;
   height: 100%;
   margin: 1;
+  background: green;
 }
 @media only screen and (min-width: 300px) and (max-width: 500px) {
   .container .main_view .home_container {
@@ -559,6 +561,7 @@ body {
   height: 100%;
   background: transparent;
   border-radius: 25px;
+  background: blue;
 }
 @media only screen and (min-width: 300px) and (max-width: 500px) {
   .container .main_view .home_container .content {
@@ -608,6 +611,7 @@ body {
 .container .main_view .home_container .content .row-default {
   margin: 2rem;
   width: 48%;
+  background: green;
 }
 @media only screen and (min-width: 1901px) {
   .container .main_view .home_container .content .row-default {
@@ -1395,8 +1399,6 @@ body {
   margin: 1rem;
 }
 .about-wrapper .about-row .about-col .col-box a {
-  text-decoration: none;
-  border: none;
   white-space: nowrap;
   overflow: hidden;
 }
@@ -1459,8 +1461,8 @@ body {
 }
 .about-wrapper .about-row .about-col .col-box:hover #icon-visible {
   visibility: visible;
-  -webkit-animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation: scale-in-center 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: scale-in-center 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 @-webkit-keyframes scale-in-center {
   0% {
@@ -1534,17 +1536,17 @@ body {
   overflow: hidden;
   visibility: hidden;
 }
-.about-wrapper .about-row .about-col .col-box .top-content-holder-row .top-content-holder .about-icons:first-child:hover {
-  fill: #d95964;
-}
-.about-wrapper .about-row .about-col .col-box .top-content-holder-row .top-content-holder .about-icons:last-child:hover {
-  fill: #304269;
-}
 @media only screen and (min-width: 300px) and (max-width: 500px), only screen and (min-width: 501px) and (max-width: 700px) {
   .about-wrapper .about-row .about-col .col-box .top-content-holder-row .top-content-holder .about-icons {
     height: 4rem;
     width: 4rem;
   }
+}
+.about-wrapper .about-row .about-col .col-box .top-content-holder-row .top-content-holder .github-svg:hover {
+  fill: #d95964;
+}
+.about-wrapper .about-row .about-col .col-box .top-content-holder-row .top-content-holder .linkedin-svg:hover {
+  fill: #304269;
 }
 .about-wrapper .about-row .about-col .col-box .top-content-holder-row .top-content-holder .user-content-holder {
   display: flex;

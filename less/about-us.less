@@ -115,13 +115,9 @@
                 border: 1px solid #E2E9ED;
                 margin: 1rem;
 
-                a {
-                    text-decoration: none;
-                    border: none;               
+                a {          
                     white-space: nowrap;   
                     overflow: hidden;
-            
-
                 }
 
 
@@ -236,24 +232,25 @@
                             width: 3rem;
                             overflow: hidden;
                             visibility: hidden;
-                         
-                            &:first-child {
-                                &:hover {
-                                    fill: @primary-red;
-                                }
-                            }
-
-                            &:last-child {
-                                &:hover {
-                                    fill: @matte-blue;
-                                }
-                            }
+                            
 
                             @media @mobile-s, @mobile {
                                 height: 4rem;
                                 width: 4rem;
                             }
                          
+                        }
+
+                        .github-svg {
+                            &:hover {
+                                fill: @primary-red;
+                            }
+                        }
+
+                        .linkedin-svg {
+                            &:hover {
+                                fill: @matte-blue;
+                            }
                         }
 
                         .user-content-holder {
